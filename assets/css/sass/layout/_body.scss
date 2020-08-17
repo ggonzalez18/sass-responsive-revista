@@ -1,0 +1,120 @@
+@import '../abstracts/variables';
+@import '../abstracts/mixins';
+
+body{
+margin: 0px;
+padding: 0px;
+}
+
+.contenedor_principal {
+    width: 960px;
+    margin: 0 auto;
+        @include vista-sm {
+    width: 100%;}
+        @include vista-md {
+    width: 100%;}
+}
+
+.section_noticias{
+    width: 100%;
+    margin: 0 auto;
+    @include vista-sm {
+    width: 100%;}
+    @include vista-md {
+    width: 100%;}
+}
+.section-noticias-izquierdo{
+    width: 73%;
+    float: left;
+    @include vista-sm {
+    width: 100%;
+    text-align: center;}
+    @include vista-md {
+    width: 100%;
+    text-align: center;}
+}
+.contenedor_noticia {
+    width: 30%;
+    display: inline-block;
+    margin: 5px;
+    cursor: pointer;
+    @include vista-sm {
+    width: 95%;
+    margin: 0;}
+    @include vista-md {
+    margin: 0;
+    width: 48%;
+    text-align: center;}
+    @include vista-lg-xl{
+    width: 30%;}
+}
+
+.cuerpo_noticia img {
+    width: 100%;
+    height: 300px;
+    border: 2px solid $color_blanco;
+}
+
+.cuerpo_noticia p {
+    padding: 5px 10px;
+    font-size: 14px;
+}
+
+.separacion_tags {
+    @include style_borde;
+    @include vista-none{
+        display: none;
+    }
+}
+
+.contenedor-noticias-destacadas {
+    margin-bottom: 50px;
+}
+
+.noticias-destacadas img {
+    width: 220px;
+    height: 190px;
+}
+
+.noticias-listado-derecho {
+    width: 23%;
+    float: right;
+    @include vista-none{
+         display: none;
+    }
+}
+
+.noticias-cabecera-listado {
+    width: 220px;
+    @include style_borde;
+}
+
+.newsletter {
+    width: 100%;
+    background-color:$color_fondo;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    @mixin vista-sm {
+        width: 100%;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    @mixin vista-md {
+        width: 100%;
+    }
+}
+
+.newsletter h2 {
+    font-size: 24px;
+       @mixin vista-sm {
+        font-size: 20px;
+    }
+}
+
+.newsletter p {
+    font-size: 18px;
+       @mixin vista-sm {
+        font-size: 12px;
+    }
+}

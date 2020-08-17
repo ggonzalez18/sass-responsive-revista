@@ -1,0 +1,29 @@
+@import '../abstracts/variables';
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: monospace;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+    float: left;
+    color: $color_blanco;
+}
+
+.separacion_tags ul {
+    padding: 0;
+    list-style: none;
+}
+
+.separacion_tags ul li {
+    padding: 2px 4px;
+    background-color: $color_coral;
+    margin-right: 1px;
+    color: $color_blanco;
+}

@@ -1,0 +1,22 @@
+//vendors
+@import './vendors/bootstrap';
+
+// abstracts
+@import './abstracts/variables';
+@import './abstracts/functions';
+@import './abstracts/mixins';
+@import './abstracts/placeholders';
+
+//base
+@import './base/typography';
+
+//componentes
+@import './components/buttons';
+@import './components/carousel';
+
+//layout
+@import './layout/body';
+@import './layout/header';
+@import './layout/footer';
+@import './layout/navigation';
+

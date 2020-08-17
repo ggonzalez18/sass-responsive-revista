@@ -1,0 +1,33 @@
+@import '../abstracts/variables';
+
+@mixin style_borde {
+border-bottom: 1px solid $color_coral;
+}
+
+// @include vista_sm ('small') {
+// width: 100%;
+// }
+
+@mixin vista-sm {
+  @media (max-width: 576px) {
+      @content;
+  }  
+}
+
+@mixin vista-md {
+    @media (min-width: 576px) and (max-width: 768px) {
+        @content;
+    }
+}
+
+@mixin vista-lg-xl {
+    @media (min-width: 992px) and (min-width: 1200px){
+        @content;
+    }
+}
+
+@mixin vista-none{
+    @media (max-width: 768px){
+         @content;
+    }
+}
